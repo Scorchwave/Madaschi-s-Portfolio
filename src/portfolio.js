@@ -7,21 +7,21 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Andrea Madaschi Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    " A PHRASE TO BE MEMORABLE ciao ehyyy ",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Andrea Madaschi Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "https://scorchwave.github.io/Madaschi-s-Portfolio/",
   },
 };
 
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
-  logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  title: "Andrea Madaschi",
+  logo_name: "Andrea Madaschi",
+  nickname: "Mada_Scorchwave",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
