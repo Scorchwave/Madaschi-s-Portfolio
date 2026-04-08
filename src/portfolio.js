@@ -718,6 +718,27 @@ const contactPageData = {
   },
 };
 
+const hobbies = {
+  title: "Hobbies",
+  subtitle: "Interests outside of work",
+  items: [
+    {
+      title: "Photography",
+      description:
+        "Street photography, paesaggi e attenzione alla composizione visiva.",
+    },
+    {
+      title: "Trekking",
+      description:
+        "Escursioni, camminate in natura e scoperta di nuovi luoghi.",
+    },
+    {
+      title: "Gaming",
+      description: "Strategici, RPG e giochi con forte componente narrativa.",
+    },
+  ],
+};
+
 export {
   settings,
   seo,
@@ -732,4 +753,5 @@ export {
   publicationsHeader,
   publications,
   contactPageData,
+  hobbies,
 };

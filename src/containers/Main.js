@@ -9,6 +9,7 @@ import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
 import ResumePage from "../pages/resume/Resume.js";
+import HobbiesComponent from "../pages/hobbies/HobbiesComponent";
 
 export default class Main extends Component {
   componentDidMount() {
@@ -86,6 +87,12 @@ export default class Main extends Component {
           <Route
             path="*"
             render={(props) => <Error404 {...props} theme={this.props.theme} />}
+          />
+          <Route
+            path="/hobbies"
+            render={(props) => (
+              <HobbiesComponent {...props} theme={this.props.theme} />
+            )}
           />
         </Switch>
       </BrowserRouter>
