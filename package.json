@@ -2,7 +2,7 @@
   "private": true,
   "name": "Madaschi Portfolio",
   "version": "0.1.0",
-  "homepage": "'https://scorchwave.github.io/Madaschi-s-Portfolio'",
+  "homepage": "https://scorchwave.github.io/Madaschi-s-Portfolio/",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
