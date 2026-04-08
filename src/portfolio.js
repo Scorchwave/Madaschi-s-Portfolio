@@ -20,7 +20,7 @@ const seo = {
 const greeting = {
   title: "Andrea Madaschi",
   logo_name: "Andrea Madaschi",
-  nickname: "Eclectic data analyst, from number to insight",
+  nickname: "From number to insight",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   resumeLink:
