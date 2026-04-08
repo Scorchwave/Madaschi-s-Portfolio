@@ -32,7 +32,7 @@ export default class Main extends Component {
   }
   render() {
     return (
-      <BrowserRouter basename="/">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route
             path="/"
@@ -86,7 +86,9 @@ export default class Main extends Component {
           />
           <Route
             path="/resume"
-            render={(props) => <ResumePage {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <ResumePage {...props} theme={this.props.theme} />
+            )}
           />
           <Route
             path="*"
