@@ -360,7 +360,7 @@ const degrees = {
     {
       title: "Università degli Studi Milano-Bicocca",
       subtitle: "Master Degree in Marine science",
-      logo_path: "iiitk_logo.png",
+      logo_path: "Bicocca.jpeg",
       alt_name: "UNIMIB",
       duration: "2019 - 2022",
       descriptions: [
