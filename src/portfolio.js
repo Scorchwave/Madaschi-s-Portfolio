@@ -8,8 +8,7 @@ const settings = {
 //SEO Related settings
 const seo = {
   title: "Andrea Madaschi Portfolio",
-  description:
-    " A PHRASE TO BE MEMORABLE ciao ehyyy ",
+  description: " A PHRASE TO BE MEMORABLE ciao ehyyy ",
   og: {
     title: "Andrea Madaschi Portfolio",
     type: "website",
@@ -51,7 +50,7 @@ const socialMediaLinks = [
   },
   {
     name: "Gmail",
-    link: "andreamadaschi3@gmail.com",
+    link: "mailto:andreamadaschi3@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
@@ -393,8 +392,7 @@ const certifications = {
       title: "Machine Learning",
       subtitle: "- Andrew Ng",
       logo_path: "stanford_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "Stanford University",
       color_code: "#8C151599",
     },
@@ -402,8 +400,7 @@ const certifications = {
       title: "Deep Learning",
       subtitle: "- Andrew Ng",
       logo_path: "deeplearning_ai_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "deeplearning.ai",
       color_code: "#00000099",
     },
@@ -411,8 +408,7 @@ const certifications = {
       title: "ML on GCP",
       subtitle: "- GCP Training",
       logo_path: "google_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "Google",
       color_code: "#0C9D5899",
     },
@@ -420,8 +416,7 @@ const certifications = {
       title: "Data Science",
       subtitle: "- Alex Aklson",
       logo_path: "ibm_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "IBM",
       color_code: "#1F70C199",
     },
@@ -429,8 +424,7 @@ const certifications = {
       title: "Big Data",
       subtitle: "- Kim Akers",
       logo_path: "microsoft_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "Microsoft",
       color_code: "#D83B0199",
     },
@@ -438,8 +432,7 @@ const certifications = {
       title: "Advanced Data Science",
       subtitle: "- Romeo Kienzler",
       logo_path: "ibm_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "IBM",
       color_code: "#1F70C199",
     },
@@ -447,8 +440,7 @@ const certifications = {
       title: "Advanced ML on GCP",
       subtitle: "- GCP Training",
       logo_path: "google_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "Google",
       color_code: "#0C9D5899",
     },
@@ -456,8 +448,7 @@ const certifications = {
       title: "DL on Tensorflow",
       subtitle: "- Laurence Moroney",
       logo_path: "deeplearning_ai_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "deeplearning.ai",
       color_code: "#00000099",
     },
@@ -465,8 +456,7 @@ const certifications = {
       title: "Fullstack Development",
       subtitle: "- Jogesh Muppala",
       logo_path: "coursera_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "Coursera",
       color_code: "#2A73CC",
     },
@@ -474,8 +464,7 @@ const certifications = {
       title: "Kuberenetes on GCP",
       subtitle: "- Qwiklabs",
       logo_path: "gcp_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "GCP",
       color_code: "#4285F499",
     },
@@ -483,8 +472,7 @@ const certifications = {
       title: "Cryptography",
       subtitle: "- Saurabh Mukhopadhyay",
       logo_path: "nptel_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "NPTEL",
       color_code: "#FFBB0099",
     },
@@ -492,8 +480,7 @@ const certifications = {
       title: "Cloud Architecture",
       subtitle: "- Qwiklabs",
       logo_path: "gcp_logo.png",
-      certificate_link:
-        "",
+      certificate_link: "",
       alt_name: "GCP",
       color_code: "#4285F499",
     },
@@ -586,8 +573,7 @@ const experience = {
         {
           title: "Data Science Intern",
           company: "Intel Indexer LLC",
-          company_url:
-            "",
+          company_url: "",
           logo_path: "intel_logo.jpg",
           duration: "Nov 2018 - Dec 2018",
           location: "Work From Home",
@@ -636,8 +622,7 @@ const experience = {
         {
           title: "Developer Students Club Member",
           company: "DSC IIITDM Kurnool",
-          company_url:
-            "",
+          company_url: "",
           logo_path: "dsc_logo.png",
           duration: "Jan 2018 - May 2020",
           location: "Kurnool, Andhra Pradesh",
