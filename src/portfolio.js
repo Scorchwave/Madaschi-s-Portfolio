@@ -738,6 +738,36 @@ const hobbies = {
     },
   ],
 };
+const caseStudiesHeader = {
+  title: "Case Studies",
+  description:
+    "Una selezione di analisi end-to-end: contesto, metodo, insight e impatto.",
+};
+
+const caseStudies = {
+  data: [
+    {
+      id: "pharma-sales",
+      title: "Pharma Sales Analysis",
+      subtitle: "Sales analytics & demand patterns",
+      description:
+        "Analisi delle vendite farmaceutiche per individuare trend, stagionalità, prodotti trainanti e opportunità di ottimizzazione.",
+      tools: ["Excel", "Power Query", "BigQuery", "Power BI"],
+      image: "case-pharma.png",
+      link: "https://github.com/Scorchwave/tuo-case-study-1",
+    },
+    {
+      id: "island-wave",
+      title: "Island Wave Co.",
+      subtitle: "Business performance case study",
+      description:
+        "Analisi commerciale con focus su KPI, segmentazione, performance dei prodotti e insight operativi.",
+      tools: ["SQL", "Excel", "Power BI"],
+      image: "case-island-wave.png",
+      link: "https://github.com/Scorchwave/tuo-case-study-2",
+    },
+  ],
+};
 
 export {
   settings,
@@ -754,4 +784,6 @@ export {
   publications,
   contactPageData,
   hobbies,
+  caseStudiesHeader,
+  caseStudies,
 };

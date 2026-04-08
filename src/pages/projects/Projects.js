@@ -1,99 +1,70 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
-import PublicationCard from "../../components/publicationsCard/PublicationCard";
-import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import {
-  greeting,
-  projectsHeader,
-  publicationsHeader,
-  publications,
-} from "../../portfolio.js";
-import ProjectsData from "../../shared/opensource/projects.json";
+import { caseStudiesHeader, caseStudies } from "../../portfolio.js";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
   render() {
     const theme = this.props.theme;
-    return (
-      <div className="projects-main">
-        <Header theme={theme} />
-        <div className="basic-projects">
-          <Fade bottom duration={2000} distance="40px">
-            <div className="projects-heading-div">
-              <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <ProjectsImg theme={theme} />
-              </div>
-              <div className="projects-heading-text-div">
-                <h1
-                  className="projects-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {projectsHeader.title}
-                </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {projectsHeader["description"]}
-                </p>
-              </div>
-            </div>
-          </Fade>
-        </div>
-        <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
-          })}
-        </div>
-        <Button
-          text={"More Projects"}
-          className="project-button"
-          href={greeting.githubProfile}
-          newTab={true}
-          theme={theme}
-        />
 
-        {/* Publications  */}
-        {publications.data.length > 0 ? (
-          <div className="basic-projects">
-            <Fade bottom duration={2000} distance="40px">
-              <div className="publications-heading-div">
-                <div className="publications-heading-text-div">
-                  <h1
-                    className="publications-heading-text"
-                    style={{ color: theme.text }}
-                  >
-                    {publicationsHeader.title}
-                  </h1>
-                  <p
-                    className="projects-header-detail-text subTitle"
-                    style={{ color: theme.secondaryText }}
-                  >
-                    {publicationsHeader["description"]}
-                  </p>
-                </div>
-              </div>
+    return (
+      <div>
+        <Header theme={theme} />
+        <div className="main" id="projects">
+          <div className="project-header">
+            <Fade bottom duration={1000} distance="20px">
+              <h1 style={{ color: theme.text }}>{caseStudiesHeader.title}</h1>
+              <p style={{ color: theme.secondaryText }}>
+                {caseStudiesHeader.description}
+              </p>
             </Fade>
           </div>
-        ) : null}
 
-        <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
-          })}
+          <div className="repo-cards-div-main">
+            {caseStudies.data.map((study) => (
+              <Fade bottom duration={1000} distance="20px" key={study.id}>
+                <div
+                  style={{
+                    backgroundColor: theme.body,
+                    border: `1px solid ${theme.imageHighlight}`,
+                    borderRadius: "12px",
+                    padding: "24px",
+                    marginBottom: "24px",
+                    boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+                  }}
+                >
+                  <h2 style={{ color: theme.text }}>{study.title}</h2>
+                  <h4 style={{ color: theme.secondaryText }}>
+                    {study.subtitle}
+                  </h4>
+                  <p style={{ color: theme.secondaryText }}>
+                    {study.description}
+                  </p>
+
+                  <p style={{ color: theme.text }}>
+                    <strong>Tools:</strong> {study.tools.join(", ")}
+                  </p>
+
+                  {study.link && (
+                    <a
+                      href={study.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: theme.text, fontWeight: "bold" }}
+                    >
+                      Apri case study
+                    </a>
+                  )}
+                </div>
+              </Fade>
+            ))}
+          </div>
         </div>
-
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
+        <Footer theme={theme} />
+        <TopButton theme={theme} />
       </div>
     );
   }
