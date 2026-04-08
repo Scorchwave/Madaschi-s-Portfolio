@@ -11,21 +11,33 @@ class Projects extends Component {
     const theme = this.props.theme;
 
     return (
-      <div>
+      <div className="projects-main">
         <Header theme={theme} />
-        <div className="main" id="projects">
-          <div className="project-header">
-            <Fade bottom duration={1000} distance="20px">
-              <h1 style={{ color: theme.text }}>{caseStudiesHeader.title}</h1>
-              <p style={{ color: theme.secondaryText }}>
-                {caseStudiesHeader.description}
-              </p>
-            </Fade>
-          </div>
+
+        <div className="basic-projects">
+          <Fade bottom duration={2000} distance="40px">
+            <div className="projects-heading-div">
+              <div className="projects-heading-text-div">
+                <h1
+                  className="projects-heading-text"
+                  style={{ color: theme.text }}
+                >
+                  {caseStudiesHeader.title}
+                </h1>
+
+                <p
+                  className="projects-header-detail-text"
+                  style={{ color: theme.secondaryText }}
+                >
+                  {caseStudiesHeader.description}
+                </p>
+              </div>
+            </div>
+          </Fade>
 
           <div className="repo-cards-div-main">
             {caseStudies.data.map((study) => (
-              <Fade bottom duration={1000} distance="20px" key={study.id}>
+              <Fade bottom duration={1500} distance="20px" key={study.id}>
                 <div
                   style={{
                     backgroundColor: theme.body,
@@ -33,18 +45,36 @@ class Projects extends Component {
                     borderRadius: "12px",
                     padding: "24px",
                     marginBottom: "24px",
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+                    boxShadow: "0 10px 20px rgba(0,0,0,0.08)",
+                    flex: "1 1 350px",
+                    textAlign: "left",
                   }}
                 >
-                  <h2 style={{ color: theme.text }}>{study.title}</h2>
-                  <h4 style={{ color: theme.secondaryText }}>
+                  <h2 style={{ color: theme.text, marginBottom: "10px" }}>
+                    {study.title}
+                  </h2>
+
+                  <h4
+                    style={{
+                      color: theme.secondaryText,
+                      marginTop: 0,
+                      marginBottom: "12px",
+                    }}
+                  >
                     {study.subtitle}
                   </h4>
-                  <p style={{ color: theme.secondaryText }}>
+
+                  <p
+                    style={{
+                      color: theme.secondaryText,
+                      lineHeight: "1.6",
+                      marginBottom: "16px",
+                    }}
+                  >
                     {study.description}
                   </p>
 
-                  <p style={{ color: theme.text }}>
+                  <p style={{ color: theme.text, marginBottom: "16px" }}>
                     <strong>Tools:</strong> {study.tools.join(", ")}
                   </p>
 
@@ -53,7 +83,15 @@ class Projects extends Component {
                       href={study.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ color: theme.text, fontWeight: "bold" }}
+                      style={{
+                        color: theme.text,
+                        fontWeight: "bold",
+                        textDecoration: "none",
+                        border: `1px solid ${theme.imageHighlight}`,
+                        padding: "10px 16px",
+                        borderRadius: "8px",
+                        display: "inline-block",
+                      }}
                     >
                       Apri case study
                     </a>
@@ -63,6 +101,7 @@ class Projects extends Component {
             ))}
           </div>
         </div>
+
         <Footer theme={theme} />
         <TopButton theme={theme} />
       </div>

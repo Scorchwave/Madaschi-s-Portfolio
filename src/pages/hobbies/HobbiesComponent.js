@@ -48,6 +48,7 @@ class HobbiesComponent extends Component {
                   <h2 style={{ color: theme.text, marginBottom: "10px" }}>
                     {hobby.title}
                   </h2>
+
                   <p style={{ color: theme.secondaryText, margin: 0 }}>
                     {hobby.description}
                   </p>
