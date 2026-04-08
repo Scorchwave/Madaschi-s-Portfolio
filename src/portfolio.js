@@ -18,8 +18,8 @@ const seo = {
 
 //Home Page
 const greeting = {
-  title: "A. Madaschi",
-  logo_name: "A. Madaschi",
+  title: "Andrea Madaschi",
+  logo_name: "Andrea Madaschi",
   nickname: "Eclectic data analyst, from number to insight",
   subTitle:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
