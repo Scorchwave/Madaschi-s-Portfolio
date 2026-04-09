@@ -65,11 +65,12 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Data Science & AI",
+      title: "Data Analyst",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
+        "⚡ Analyze and manage large and complex datasets and databases",
+        "⚡ Manage and cleand data with ETL procedure",
+        "⚡ Extracting patterns and insghts through data analysis",
         "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
       ],
       softwareSkills: [
@@ -747,11 +748,11 @@ const caseStudiesHeader = {
 const caseStudies = {
   data: [
     {
-      id: "pharma-sales",
-      title: "Pharma Sales Analysis",
+      id: "Olist sales Analysis ",
+      title: "Olist sales Analysis",
       subtitle: "Sales analytics & demand patterns",
       description:
-        "Analisi delle vendite farmaceutiche per individuare trend, stagionalità, prodotti trainanti e opportunità di ottimizzazione.",
+        "Analisi delle vendite e-commerce online per individuare trend, stagionalità, prodotti trainanti",
       tools: ["Excel", "Power Query", "BigQuery", "Power BI"],
       image: "case-pharma.png",
       link: "https://github.com/Scorchwave/tuo-case-study-1",
